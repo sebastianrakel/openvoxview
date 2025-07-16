@@ -11,7 +11,9 @@ ENV VUE_APP_COMMIT=${VUE_APP_COMMIT}
 RUN make all
 
 FROM alpine:3.21
-ENV PORT=8080
+ENV PORT=5000
 COPY --from=BUILD /build/openvoxview /openvoxview
+
+EXPOSE 5000/tcp
 
 ENTRYPOINT /openvoxview
