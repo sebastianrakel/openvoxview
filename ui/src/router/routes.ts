@@ -47,6 +47,16 @@ const routes: RouteRecordRaw[] = [
         component: () => import('pages/report/ReportDetailPage.vue'),
       },
       {
+        name: 'CatalogOverview',
+        path: 'catalogs',
+        component: () => import('pages/catalog/CatalogOverviewPage.vue'),
+      },
+      {
+        name: 'CatalogDetail',
+        path: 'catalog/:certname',
+        component: () => import('pages/catalog/CatalogDetailPage.vue'),
+      },
+      {
         name: 'PredefinedViewResult',
         path: 'view/:viewName',
         component: () => import('pages/views/PredefinedViewResultPage.vue'),

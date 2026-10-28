@@ -66,6 +66,15 @@
             <q-item-label>{{ $t('MENU_REPORTS') }}</q-item-label>
           </q-item-section>
         </q-item>
+        <q-item clickable :to="{ name: 'CatalogOverview' }">
+          <q-item-section avatar>
+            <q-icon name="catalog" />
+          </q-item-section>
+
+          <q-item-section>
+            <q-item-label>{{ $t('MENU_CATALOGS') }}</q-item-label>
+          </q-item-section>
+        </q-item>
         <q-expansion-item
           icon="view_list"
           :label="$t('MENU_VIEWS')"

@@ -109,6 +109,8 @@ func main() {
 			pdb.GET("query/predefined", pdbHandler.PdbQueryPredefined)
 			pdb.GET("fact-names", pdbHandler.PdbGetFactNames)
 			pdb.POST("event-counts", pdbHandler.PdbGetEventCounts)
+			pdb.GET("catalogs", pdbHandler.PdbGetCatalogs)
+			pdb.GET("catalog/:node", pdbHandler.PdbGetCatalogNode)
 		}
 	}
 
